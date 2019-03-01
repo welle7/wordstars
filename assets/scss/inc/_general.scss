@@ -1,0 +1,45 @@
+$bgcolor: #eee;
+$fcolor: #333;
+$gray: #ccc;
+$hf: orange;
+$susy: (
+	columns: 12,
+	container: 1200px,
+	gutters: 1/4, 
+	global-box-sizing: border-box,
+	//debug: (image: show)
+);
+@import "compass/layout.scss";
+@include sticky-footer(120px, "main", "#layout_footer", "footer");
+@include border-box-sizing;
+.wrapper{
+	@include container;
+}
+body{
+	background: $bgcolor;
+}
+header, footer{
+	height: 120px;
+	background: $hf;
+}
+.left{
+	@include span(4);
+}
+.right{
+	@include span(8 last);
+}
+.left, .right{
+	min-height: 400px;
+}
+#video {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    background: #333;
+}
