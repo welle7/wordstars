@@ -96,7 +96,7 @@ footer {
   box-sizing: border-box;
 }
 
-/* line 15, ../scss/inc/_general.scss */
+/* line 16, ../scss/inc/_general.scss */
 .wrapper {
   max-width: 1200px;
   margin-left: auto;
@@ -109,42 +109,62 @@ footer {
   clear: both;
 }
 
-/* line 18, ../scss/inc/_general.scss */
+/* line 19, ../scss/inc/_general.scss */
 body {
   background: #eee;
 }
 
-/* line 21, ../scss/inc/_general.scss */
+/* line 22, ../scss/inc/_general.scss */
 header, footer {
   height: 120px;
   background: orange;
 }
 
-/* line 25, ../scss/inc/_general.scss */
+/* line 26, ../scss/inc/_general.scss */
+nav {
+  height: 60px;
+}
+
+/* line 29, ../scss/inc/_general.scss */
 .unten {
   height: 150px;
 }
 
-/* line 28, ../scss/inc/_general.scss */
-.left {
-  width: 32.20339%;
-  float: left;
-  margin-right: 1.69492%;
-}
-
-/* line 31, ../scss/inc/_general.scss */
-.right {
-  width: 66.10169%;
+/* line 32, ../scss/inc/_general.scss */
+.sidebar {
+  width: 33.33333%;
   float: right;
-  margin-right: 0;
-}
-
-/* line 34, ../scss/inc/_general.scss */
-.left, .right {
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   min-height: 400px;
 }
 
-/* line 37, ../scss/inc/_general.scss */
+/* line 36, ../scss/inc/_general.scss */
+.content {
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+@media (max-width: 680px) {
+  /* line 40, ../scss/inc/_general.scss */
+  .content, .sidebar {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+/* line 44, ../scss/inc/_general.scss */
+.spalten {
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+/* line 47, ../scss/inc/_general.scss */
 #video {
   position: fixed;
   top: 0px;
@@ -189,7 +209,7 @@ h1 {
 }
 /* line 28, ../scss/inc/_fonts.scss */
 h1 span {
-  color: gold;
+  color: tomato;
 }
 
 /* line 32, ../scss/inc/_fonts.scss */
@@ -198,23 +218,38 @@ h2 {
   margin: 1.8rem 0;
 }
 
-/* line 2, ../scss/inc/_nav.scss */
+/* line 1, ../scss/inc/_nav.scss */
+header a:link, a:visited {
+  text-decoration: none;
+}
+
+/* line 5, ../scss/inc/_nav.scss */
 nav ul {
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0 0;
   list-style-type: none;
 }
-/* line 6, ../scss/inc/_nav.scss */
+/* line 9, ../scss/inc/_nav.scss */
 nav ul li {
   float: left;
   margin-right: 20px;
 }
-/* line 9, ../scss/inc/_nav.scss */
-nav ul li a {
+/* line 12, ../scss/inc/_nav.scss */
+nav ul li a:link, nav ul li a:visited {
   text-decoration: none;
-  color: black;
-  padding: 6px 4px;
-  background-color: #ddd;
+  color: #fff;
+  padding: 8px 10px;
+  background-color: #000;
+}
+
+/* line 21, ../scss/inc/_nav.scss */
+a:link, a:visited {
+  color: #000;
+}
+
+/* line 24, ../scss/inc/_nav.scss */
+a:hover {
+  text-decoration: none;
 }
 
 /* line 1, ../scss/inc/_forms.scss */

@@ -7,6 +7,7 @@ $susy: (
 	container: 1200px,
 	gutters: 1/4, 
 	global-box-sizing: border-box,
+	gutter-position: inside,
 	//debug: (image: show)
 );
 @import "compass/layout.scss";
@@ -22,17 +23,26 @@ header, footer{
 	height: 120px;
 	background: $hf;
 }
+nav{
+	height: 60px;
+}
 .unten{
 	height: 150px;
 }
-.left{
-	@include span(4);
-}
-.right{
-	@include span(8 last);
-}
-.left, .right{
+.sidebar{
+	@include span(4 last);
 	min-height: 400px;
+}
+.content{
+	@include span(8);
+}
+@media (max-width: 680px) {
+	.content, .sidebar{
+		@include span(12);
+	}
+}
+.spalten{
+	@include span(4);
 }
 #video {
     position: fixed;

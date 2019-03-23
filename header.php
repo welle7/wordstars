@@ -15,6 +15,6 @@
 				<h1><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?> <span> ☆ </span></a></h1>
 			</div>
 		</header>
-		<nav>
+		<nav class="wrapper">
 		<?php wp_nav_menu( array( 'theme_location' => 'header-nav' ) ); ?>
 		</nav>

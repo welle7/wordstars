@@ -1,17 +1,26 @@
+header a:link, a:visited{
+    text-decoration: none;
+}
 nav {
     ul {
         padding: 0;
-        margin: 0;
+        margin: 20px 0 0 0;
         list-style-type: none;
         li {
             float: left;
             margin-right: 20px;
-            a {
+            a:link, a:visited {
                 text-decoration: none;
-                color: black;
-                padding: 6px 4px;
-                background-color: #ddd;
+                color: #fff;
+                padding: 8px 10px;
+                background-color: #000;
             }
         }
     }
+}
+a:link, a:visited{
+    color:#000;
+}
+a:hover {
+    text-decoration: none;
 }
