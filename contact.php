@@ -64,7 +64,7 @@ if(isset($_POST['senden'])) {
                 $out = "<p>Ihr Beitrag wird nach redaktioneller Begutachtung, zeitnah freigeschaltet</p>";
 
                 // Mail zusammenstellen to | Subject | und nachricht
-                $to = 'andy@schaufler.ch';
+                $to = 'user@local.test';
                 $subject = "Gästebuch eintrag von:" . $username;
                 $message = "Name:" . $username . "\n";
                 $message .= "Gästebucheintrag:" . $inhalt . "\n";
